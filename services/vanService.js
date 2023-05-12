@@ -1,8 +1,8 @@
-const vanRepo = require("../repository/vanRepo");
+const vanRepo = require("../repositories/vanRepository");
 
 const getAllVans = async () => {
   const res = await vanRepo.getAllVans();
-    return res
+  return res
 };
 
 const createVan = async (newVan) => {
@@ -11,7 +11,7 @@ const createVan = async (newVan) => {
 };
 
 const getOneVan = () => {
-    return;
+  return;
 };
 
 const updateOneVan = () => {
@@ -22,10 +22,10 @@ const deleteOneVan = () => {
   return;
 };
 
-  module.exports = {
-    getAllVans,
-    createVan,
-    getOneVan,
-    updateOneVan,
-    deleteOneVan,
-  };
+module.exports = {
+  getAllVans,
+  createVan,
+  getOneVan,
+  updateOneVan,
+  deleteOneVan,
+};

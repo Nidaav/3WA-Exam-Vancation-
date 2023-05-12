@@ -1,8 +1,8 @@
-const userRepo = require("../repository/userRepo");
+const userRepo = require("../repositories/userRepository");
 
 const getAllUsers = async () => {
   const res = await userRepo.getAllUsers();
-    return res
+  return res
 };
 
 const createUser = async (newUser) => {
@@ -11,7 +11,7 @@ const createUser = async (newUser) => {
 };
 
 const getOneUser = () => {
-    return;
+  return;
 };
 
 const updateOneUser = () => {
@@ -22,10 +22,10 @@ const deleteOneUser = () => {
   return;
 };
 
-  module.exports = {
-    getAllUsers,
-    createUser,
-    getOneUser,
-    updateOneUser,
-    deleteOneUser,
-  };
+module.exports = {
+  getAllUsers,
+  createUser,
+  getOneUser,
+  updateOneUser,
+  deleteOneUser,
+};

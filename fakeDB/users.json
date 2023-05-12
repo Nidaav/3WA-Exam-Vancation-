@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "firstName": "Béné",
+    "lastName": "Madeleine",
+    "email": "mail@mail.com",
+    "password": "password1"
+  },
+  {
+    "id": 2,
+    "firstName": "Paul",
+    "lastName": "Dupont",
+    "email": "mail@mail.com",
+    "password": "password2"
+  },
+  {
+    "id": 3,
+    "firstName": "Patrick",
+    "lastName": "Chirac",
+    "email": "mail@mail.com",
+    "password": "password3"
+  },
+  {
+    "id": 4,
+    "firstName": "François",
+    "lastName": "Pignon",
+    "email": "mail@mail.com",
+    "password": "password4"
+  },
+  {
+    "id": 5,
+    "firstName": "Pierre",
+    "lastName": "Brochant",
+    "email": "mail@mail.com",
+    "password": "password5"
+  },
+  {
+    "id": 6,
+    "firstName": "Maitre",
+    "lastName": "Gims",
+    "email": "mail@mail.com",
+    "password": "password6"
+  },
+  {
+    "id": 7,
+    "firstName": "Fred",
+    "lastName": "Bourhis",
+    "email": "mail@mail.com",
+    "password": "password7"
+  },
+  {
+    "id": 8,
+    "firstName": "Benjos",
+    "lastName": "Brochard",
+    "email": "mail@mail.com",
+    "password": "password8"
+  },
+  {
+    "id": 9,
+    "firstName": "Nathan",
+    "lastName": "Hauchard",
+    "email": "mail@mail.com",
+    "password": "password9"
+  },
+  {
+    "id": 10,
+    "firstName": "Simon",
+    "lastName": "Moss",
+    "email": "mail@mail.com",
+    "password": "password10"
+  }
+]

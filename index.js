@@ -1,17 +1,18 @@
-const bodyParser = require("body-parser");
-const app = require("express")();
-app.use(bodyParser.json());
-const { appendFile } = require("fs");
-const sensorRouter = require("./routes/sensor")
-const organisationRouter = require("./routes/organisation");
-// const { getAllOrganisations } = require('./services/organisationService');
+// const bodyParser = require("body-parser");
+const express = require("express");
+const app = express();
+// app.use(bodyParser.json());
+// const { appendFile } = require("fs");
+const userRouter = require("./routes/user")
+const vanRouter = require("./routes/van");
 
-app.use("/sensors", sensorRouter)
-app.use("/organisations", organisationRouter)
+
+app.use("/users", userRouter)
+app.use("/vans", vanRouter)
 
 console.log(`
 New refresh : `);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`API is listening on port ${PORT}`);
 });
