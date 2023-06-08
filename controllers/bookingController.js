@@ -44,11 +44,6 @@ const updateOneBooking = async (req, res) => {
     res.status(200).send({ status: "OK", data: updatedBooking});
 };
 
-// const getOneVan = (req, res) => {
-//     const Van = bookingService.getOneVan(orgId);
-//     res.send("Get an existing Van");
-// };
-
 
   
 const deleteOneBooking = (req, res) => {
@@ -67,7 +62,4 @@ module.exports = {
     updateOneBooking,
     deleteOneBooking,
     createReview,
-    // createVan,
-    // getOneVan,
-    // deleteOneVan,
 };

@@ -2,7 +2,6 @@ const db = require("../config/db");
 
 const getAllUsers = async () => {
     return await db.sqlQuery(`SELECT user_id AS userId, first_name AS firstName, last_name AS lastName, email, password, sign_up_date AS signUpDate, role, org_id AS orgId FROM users`);
-    // ROLES : 1 = user, 2 = org, 3 = admin
 };
 
 const createNewUser = async (user) => {
@@ -10,15 +9,11 @@ const createNewUser = async (user) => {
 }
 
 const getUserByEmail = async (email) => {
-    // console.log('email:', email)
     return await db.sqlQuery(`SELECT user_id AS userId, first_name AS firstName, last_name AS lastName, email, password, sign_up_date AS signUpDate, role, org_id AS orgId FROM users WHERE email = ?`, [email]);
-    // ROLES : 1 = user, 2 = org, 3 = admin
 };
 
 const getUserById = async (id) => {
-    // console.log('id:', id)
     return await db.sqlQuery(`SELECT user_id AS userId, first_name AS firstName, last_name AS lastName, email, password, sign_up_date AS signUpDate, role, org_id AS orgId FROM users WHERE id = ?`, [id]);
-    // ROLES : 1 = user, 2 = org, 3 = admin
 };
 
 const updateUser = async (user) => {

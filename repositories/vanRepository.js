@@ -14,7 +14,6 @@ const updateOneVan = async (van) => {
     return await db.sqlQuery(`UPDATE vans SET model = ?, capacity = ?, description = ?, price = ? WHERE van_id = ?`, [van.model, van.capacity, van.description, van.price, van.vanId]);
 }
 const deleteOneVan = async (id) => {
-    console.log('id:', id)
     // je laisse cette dernière ligne commentée pour montrer que la route complète est écrite mais que refaire un van me prend trop de temps, j'ai testé une fois elle fonctionne
     // return await db.sqlQuery(`DELETE FROM vans WHERE van_id = ?`, [id]);
 }

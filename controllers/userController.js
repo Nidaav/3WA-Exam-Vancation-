@@ -8,7 +8,6 @@ const getAllUsers = async (req, res) => {
 
 const createUser = async (req, res) => {
   const { body } = req;
-  // console.log("body:", body);
   if (!body.firstName || !body.lastName || !body.email || !body.password) {
     return;
   }
@@ -20,10 +19,11 @@ const createUser = async (req, res) => {
     email: body.email,
     password: hashedPassword,
     signUpDate: new Date(),
-    role: 1
+    role: body.role
   };
   
   const createdUser = await userService.createUser(newUser);
+  newUser.userId = createdUser.insertId
   res.status(201).send({ status: "OK", data: createdUser, newUser: newUser });
 };
 

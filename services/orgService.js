@@ -12,23 +12,7 @@ const getOneOrg = () => {
   return;
 };
 
-// const createVan = async (newVan) => {
-//   const createdVan = await orgRepo.createNewVan(newVan);
-//   return createdVan;
-// };
-
-// const updateOneVan = () => {
-//   return;
-// };
-
-// const deleteOneVan = () => {
-//   return;
-// };
-
 module.exports = {
   getAllOrgs,
   getOneOrg,
-  // createVan,
-  // updateOneVan,
-  // deleteOneVan,
 };

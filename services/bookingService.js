@@ -24,10 +24,6 @@ const createReview = async (newBooking) => {
   return createdR[0];
 };
 
-// const getOneVan = () => {
-//   return;
-// };
-
 const updateOneBooking = async (body) => {
   const updateB = await bookingRepo.updateOneBooking(body);
   const updatedB = await bookingRepo.findBookingById(body.bookingId);
@@ -47,5 +43,4 @@ module.exports = {
   createReview,
   updateOneBooking,
   deleteOneBooking,
-  // getOneVan,
 };
